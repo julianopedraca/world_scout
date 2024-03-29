@@ -23,15 +23,29 @@ Things you may want to cover:
 
 * ...
 
+## Init encryption
+```bash
+docker exec -it world_scout-rails-1 bin/rails db:encryption:init
+```
+
+## Init encryption
+```bash
+docker exec -it world_scout-rails-1 EDITOR="code --wait" bin/rails credentials:edit
+```
+
 ## Create Database
 ```bash
-rails db:create
+docker exec -it world_scout-rails-1 bin/rails db:create
+```
+
+## Migrate Database
+```bash
+docker exec -it world_scout-rails-1 bin/rails db:migrate
 ```
 
 ## Create sacffold
 ```bash
 rails g scaffold <table> <properties:type>
-
 #eg rails g scaffold user name:string
 ```
 ## Migrate
@@ -49,4 +63,6 @@ rails db:migrate
 ```bash
 # it will updtae swagger based on swagger_helper
 rake rswag
-```# world_scout
+```
+
+# world_scout

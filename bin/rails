@@ -2,3 +2,6 @@
 APP_PATH = File.expand_path("../config/application", __dir__)
 require_relative "../config/boot"
 require "rails/commands"
+[1mUnrecognized command "credentials:edit" ([1;4mRails::Command::UnrecognizedCommandError[m[1m)[m
+[1mDid you mean?  credentials:diff[m
+[1m               credentials:show[m
